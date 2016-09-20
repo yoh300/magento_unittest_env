@@ -1,8 +1,6 @@
 FROM yoh300/magento:latest
 MAINTAINER Watchara Chiamchit <yoh300@hotmail.com>
 
-RUN DEBIAN_FRONTEND=noninteractive apt-get install php5-xdebug
-
 ADD create_mysql_admin_user.sh /create_mysql_admin_user.sh
 RUN chmod 755 /*.sh
 
